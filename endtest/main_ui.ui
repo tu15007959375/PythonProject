@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDlg</class>
+ <widget class="QDialog" name="MainDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>555</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>301</width>
+     <height>501</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>50</y>
+     <width>166</width>
+     <height>529</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>18</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QComboBox" name="MethodComboBox">
+      <property name="styleSheet">
+       <string notr="true">QComboBox{border:1px solid rgb(204,204,204);border-radius:3px;height:28px;}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>thulac</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>pkuseg</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>jieba</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>snowlp</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="SearchButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>词频提取</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="CloudButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>生成词云</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ScrapyViewButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>图表展示</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="DataButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+width:150px;
+height:50px;
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>数据查看</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="HistoryButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>操作历史</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ExitButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="idlabel">
+   <property name="geometry">
+    <rect>
+     <x>601</x>
+     <y>30</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="calendarWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>296</width>
+     <height>236</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>301</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QDateEdit" name="StartDateEdit"/>
+    </item>
+    <item>
+     <widget class="QDateEdit" name="EndDateEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>349</x>
+     <y>10</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="IDlabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户名</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

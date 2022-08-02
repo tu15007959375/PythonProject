@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HistoryDialog</class>
+ <widget class="QDialog" name="HistoryDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>471</width>
+     <height>481</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>40</y>
+     <width>162</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="clearButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>清除记录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exportButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>导出记录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="importButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>导入记录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="backButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

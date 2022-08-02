@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScrapyDialog</class>
+ <widget class="QDialog" name="ScrapyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1124</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>210</y>
+     <width>162</width>
+     <height>116</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>一致性：0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{border:1px solid rgb(204,204,204);border-radius:3px;height:28px;}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>人物关系图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>数量柱状图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>数量比例图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LDA-jieba图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LDA-thulac图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LDA-pkuseg图</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LDA-snowlp图</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="backButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

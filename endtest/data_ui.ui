@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataDialog</class>
+ <widget class="QDialog" name="DataDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1181</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>1141</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>用户名称</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>发布内容</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>发布日期</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>网址链接</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>660</y>
+     <width>1112</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="FirstPageButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>首页</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="PrePageButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>上一页</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="NowPagelabel">
+      <property name="text">
+       <string>当前页数：1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="NextPageButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>下一页</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="LastPageButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>尾页</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="AllPagelabel">
+      <property name="text">
+       <string>共100页</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>跳转到</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="maximumSize">
+       <size>
+        <width>20</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>页</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="EnterPageButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>1101</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox{border:1px solid rgb(204,204,204);border-radius:3px;height:28px;}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>thulac</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>pkuseg</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>jieba</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>snowlp</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PreDataButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+        </property>
+        <property name="text">
+         <string>原始数据</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="NewDataButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+        </property>
+        <property name="text">
+         <string>分词数据</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>1031</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>搜索：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="maximumSize">
+       <size>
+        <width>490</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="searchButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+width:150px;
+height:50px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>搜索</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

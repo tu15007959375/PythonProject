@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>547</width>
+    <height>578</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>452</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font-size:30px;
+color:rgb(255, 255, 255)
+</string>
+      </property>
+      <property name="text">
+       <string>姓名：涂进兴</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font-size:30px;
+color:rgb(255, 255, 255)
+</string>
+      </property>
+      <property name="text">
+       <string>学号:8002118264</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font-size:30px;
+color:rgb(255, 255, 255)
+</string>
+      </property>
+      <property name="text">
+       <string>项目名称：微博热点自动提取软件</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">font-size:30px;
+color:rgb(255, 255, 255)
+</string>
+      </property>
+      <property name="text">
+       <string>版本：1.0.0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ExitButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background-color:rgba(255, 255, 255, 0);
+border-radius: 8px;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+margin: 4px 2px;
+color:rgb(255, 255, 255);
+border: 5px solid rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(199, 255, 255);
+}
+ 
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:40px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
