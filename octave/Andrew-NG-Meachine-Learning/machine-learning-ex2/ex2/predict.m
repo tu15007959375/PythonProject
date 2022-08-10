@@ -17,6 +17,13 @@ p = zeros(m, 1);
 
 
 
+p = sigmoid(X*theta);
+ 
+pos = find(p>=0.5);
+neg = find(p<0.5);
+ 
+p(pos,1) = 1;
+p(neg,1) = 0;
 
 
 
