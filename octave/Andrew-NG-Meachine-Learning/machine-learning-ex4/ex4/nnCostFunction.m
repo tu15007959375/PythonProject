@@ -66,17 +66,53 @@ Theta2_grad = zeros(size(Theta2));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+X = [ones(m,1) X];
+z2 = X * Theta1';
+a2 = sigmoid(z2);
+ 
+z3 = [ones(m,1) a2];
+h = sigmoid(z3 * Theta2');
+ 
+yk = zeros(m,num_labels); %数据中的y是数，需要构造一个向量来对应10个神经元的输出
+for i = 1:m
+    yk(i,y(i)) = 1; %yk为向量，其中数据对应的元素为1，其余为0
+end
+ 
+J = -(1/m) * sum(sum(yk .* log(h) + (1-yk) .* log(1-h))); %如果直接用矩阵乘法，会导致第i个数据与第j个数据估值相乘的错误（i!=j)，点乘就直接把每一次预测数据对应起来了
+ 
+% 正则化时不需要偏置项的参数
+Theta1_reg = Theta1(:,2:end);
+Theta2_reg = Theta2(:,2:end);
+ 
+J = J + lambda/(2*m) * (sum(sum(Theta1_reg .* Theta1_reg)) + sum(sum(Theta2_reg .* Theta2_reg)));
+ 
+for i = 1:m
+    z_2 = X(i,:) * Theta1'; %X是行向量
+    a_2 = sigmoid(z_2);
+    z_3 = [1 a_2] * Theta2';
+    a_3 = sigmoid(z_3);
+ 
+    yk = zeros(num_labels,1);
+    yk(y(i),1) = 1;
+    delta_3 = a_3' - yk;
+    delta_2 = Theta2' * delta_3 .* sigmoidGradient([1 z_2]');
+    delta_2 = delta_2(2:end);
+    Theta1_grad = Theta1_grad + delta_2 * X(i,:);
+    Theta2_grad = Theta2_grad + delta_3 * [1 a_2];
+end
+ 
+ 
+Theta1_grad(:,1)=Theta1_grad(:,1)/m;  %偏置项不需要正则化
+Theta1_grad(:,2:size(Theta1_grad,2))=Theta1_grad(:,2:size(Theta1_grad,2))/m + lambda*Theta1(:,2:size(Theta1,2))/m;
+ 
+Theta2_grad(:,1)=Theta2_grad(:,1)/m;  %偏置项不需要正则化
+Theta2_grad(:,2:size(Theta2_grad,2))=Theta2_grad(:,2:size(Theta2_grad,2))/m + lambda*Theta2(:,2:size(Theta2,2))/m;
+ 
+ 
+% -------------------------------------------------------------
+ 
+% =========================================================================
+ 
 
 
 
