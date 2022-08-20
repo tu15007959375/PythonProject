@@ -26,6 +26,24 @@ sigma = 0.3;
 
 
 
+c = [0.01 0.03 0.1 0.3 1 3 10 30];
+sig = c;
+errors = zeros(length(c),length(sig));
+ 
+for i = 1:length(c)
+    for j = 1:length(sig)
+        model = svmTrain(X, y, c(i), @(x1, x2) gaussianKernel(x1, x2, sig(j)));
+        prediction = svmPredict(model,Xval);
+        errors(i,j) = mean(double(prediction ~= yval));
+    end
+end
+ 
+error = min(min(errors));
+[i,j] = find(errors == error);
+C = c(i);
+sigma = sig(j);
+ 
+fprintf('\nC is %f, sigma is %f\n',C,sigma);
 
 
 
