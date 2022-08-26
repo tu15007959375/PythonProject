@@ -40,7 +40,16 @@ Theta_grad = zeros(size(Theta));
 %                     partial derivatives w.r.t. to each element of Theta
 %
 
+% 通过点乘R获得有评分的数据
+J = sum(sum(((X * Theta') .* R - Y .*R) .^ 2)) / 2;
 
+X_grad = ((X * Theta') .* R - Y .*R) * Theta;
+Theta_grad = ((X * Theta') .* R - Y .*R)' * X;
+
+% 正则化
+J += (lambda / 2) * sum(sum(Theta .^ 2)) + (lambda / 2) * sum(sum(X .^ 2));
+X_grad += lambda * X;
+Theta_grad += lambda * Theta;
 
 
 

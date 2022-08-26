@@ -30,6 +30,24 @@ for epsilon = min(pval):stepsize:max(pval)
 
 
 
+    % 求出阈值为epsilon时的预测情况，pval值小于epsilon的点是异常点
+    % predictions是一个01列向量
+    predictions = (pval < epsilon);
+    % 下求F-score
+    % 求true positive值
+    tp = sum( (predictions == 1) & (yval == 1) );
+    % 求false positive值
+    fp = sum( (predictions == 1) & (yval == 0) );
+    % 求false negative值
+    fn = sum( (predictions == 0) & (yval == 1) );
+    % 求精准率（precision）
+    prec = tp / ( tp + fp );
+    % 求召回率（recall）
+    rec = tp / ( tp + fn );
+    % 最后求F-score
+    F1 = 2 * prec * rec / ( prec + rec);
+    % F-score越大越好
+    % 若当前epsilon对应的F-score更大，则该epsilon是更好的epsilon值
 
 
 
