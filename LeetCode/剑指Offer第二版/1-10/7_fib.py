@@ -1,3 +1,5 @@
+# 斐波那契数列
+# 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）
 class Solution:
     def fib(self, n: int) -> int:
         return self.fibonacci(n) % 1000000007
