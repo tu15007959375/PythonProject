@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7dfb83b3-5e0d-4190-bea0-ee5108dbc3ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/1-10/4_reversePrint.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/1-10/4_reversePrint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/1-10/5_buildTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/1-10/5_buildTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/11-2_cuttingRope.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/11-2_cuttingRope.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/13_myPow.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/13_myPow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/14_printNumbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/14_printNumbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/15_deleteNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/15_deleteNode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/16_isMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/16_isMatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/17_isNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/17_isNumber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/18_exchange.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/18_exchange.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/19_getKthFromEnd.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/19_getKthFromEnd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/20_reverseList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/11-20/20_reverseList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/21_mergeTwoLists.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/21_mergeTwoLists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/22_isSubStructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/22_isSubStructure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/23_mirrorTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/23_mirrorTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/24_isSymmetric.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/24_isSymmetric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/25_spiralOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/25_spiralOrder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/26_minStack.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/26_minStack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/27_validateStackSequences.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/27_validateStackSequences.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/28_levelOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/28_levelOrder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/29-levelOrder2.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/29-levelOrder2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/30_levelOrder3.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/21-30/30_levelOrder3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/31_verifyPostorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/31_verifyPostorder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/32_pathSum.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/32_pathSum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/33_copyRandomList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/33_copyRandomList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/34_treeToDoublyList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/34_treeToDoublyList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/35_serializeAnddeserialize.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/35_serializeAnddeserialize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/36_permutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/36_permutation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/37_majorityElement.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/37_majorityElement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/38_getLeastNumbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/31-40/38_getLeastNumbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/commonUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/剑指Offer第二版/commonUtil.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GhEFzHKqsu7Q23uI1o3w6QljF9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Code/PythonProject",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dfb83b3-5e0d-4190-bea0-ee5108dbc3ce" name="Changes" comment="" />
+      <created>1666832315749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666832315749</updated>
+      <workItem from="1666832317469" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
