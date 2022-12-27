@@ -1,2 +1,4 @@
 # PythonProject
-octave是关于吴恩达老师相关的课后练习以及作者本人写的答案
+octave文件夹是关于吴恩达老师相关的课后练习以及作者本人写的答案
+# leetcode
+leetcode文件夹是使用python写的关于leetcode的代码
